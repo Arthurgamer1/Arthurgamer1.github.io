@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+}
+
+body nav {
+    position: sticky;
+    margin: 0px;
+}
+
+ul {
+    background-color: rgb(110, 3, 3);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+li a {
+    height: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(223, 76, 76);
+    color: rgb(251, 238, 238);
+    padding: 0px 15px;
+}
+
+.banner {
+    padding: 0px;
+
+
+}
