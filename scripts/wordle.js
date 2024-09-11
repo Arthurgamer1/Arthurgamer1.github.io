@@ -78,7 +78,7 @@ function update() {
             currTile.classList.add("absent");
         }
 
-        if (correct = width) {
+        if (correct == width) {
             gameOver = true;
         }
     }
