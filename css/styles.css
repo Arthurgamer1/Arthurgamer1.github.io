@@ -45,14 +45,14 @@ li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 100vh;
     background-size: cover;
 }
 
 section {
     text-align: center;
     vertical-align: center;
-    border-radius: 20%;
+    border-radius: 10%;
 }
 
 #CInfo {
@@ -60,17 +60,16 @@ section {
     padding: 30px;
     width: 50%;
     text-align: center;
-    border-radius: 20%;
+    border-radius: 10%;
 }
 
 #CInfo img {
     max-width: 25%;
-    max-height: 25%;
+    max-height: 30%;
     border-radius: 10%;
 }
 
 footer {
-    height: 20vh;
-    padding-top: 50px;
+    padding: 25px;
     text-align: center;
 }
