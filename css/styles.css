@@ -1,8 +1,10 @@
 body {
     margin: 0px;
-    box-sizing: border-box;
     min-height: 100vh;
+    box-sizing: border-box;
     position: relative;
+    color: white;
+    background-size: cover;
 }
 
 body nav {
@@ -13,16 +15,17 @@ body nav {
 ul {
     background-color: rgb(110, 3, 3);
     width: 100%;
-    box-sizing: border-box;
     margin: 0px;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 li {
     list-style: none;
-    padding: 0 10px;
-    font-size: 25px;
+    background-color: rgb(110, 3, 3);
+    padding: 0px 10px;
+    font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -34,12 +37,40 @@ li a {
 
 li a:hover {
     background-color: rgb(223, 76, 76);
-    color: rgb(251, 238, 238);
+    color: rgb(255, 255, 255);
     padding: 0px 15px;
 }
 
 .banner {
-    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-size: cover;
+}
 
+section {
+    text-align: center;
+    vertical-align: center;
+    border-radius: 20%;
+}
 
+#CInfo {
+    background-color: rgb(15, 32, 60);
+    padding: 30px;
+    width: 50%;
+    text-align: center;
+    border-radius: 20%;
+}
+
+#CInfo img {
+    max-width: 25%;
+    max-height: 25%;
+    border-radius: 10%;
+}
+
+footer {
+    height: 20vh;
+    padding-top: 50px;
+    text-align: center;
 }
