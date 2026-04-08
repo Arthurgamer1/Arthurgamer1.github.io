@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../App.css';
 
 const Header: React.FC = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -13,12 +12,13 @@ const Header: React.FC = () => {
     useEffect(() => {
         const theme = isDarkMode ? 'dark' : 'light';
         document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
     }, [isDarkMode]);
 
     return (
         <header>
             <div className="header-inner">
-                <div className="brand" onClick={() => navigate('/')}>Arthur<span>Web</span></div>
+                <div className="header-brand" onClick={() => navigate('/')}>Arthur<span>Web</span></div>
 
                 <nav>
                     <button type="button" className="nav-btn" onClick={() => navigate('/about')}>

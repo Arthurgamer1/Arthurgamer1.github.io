@@ -1,17 +1,17 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/header'
-import './App.css'
 import About from './pages/about';
 import Home from './pages/home';
 import Projects from './pages/projects';
 import Wordle from './pages/wordle';
+import './scss/main.scss';
 
 function App() {
 
   return (
     <>
       <Header />
-      <div className="app">
+      <div >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

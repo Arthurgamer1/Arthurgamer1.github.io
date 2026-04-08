@@ -1,24 +1,28 @@
 import { useNavigate } from 'react-router-dom';
 import Card from '../components/cards';
 
-const navigate = useNavigate();
-const Projects = () =>
-    <div className="cards">
-        <Card
-            num="01"
-            label="Wordle Game"
-            image="/wordle-thumb.png"
-            showButton={true}
-            onClick={() => navigate('/projects/wordle')}
-        />
+const Projects = () => {
+    const navigate = useNavigate();
 
-        <Card
-            num="02"
-            label="Wordle Game"
-            image="/wordle-thumb.png"
-            showButton={true}
-            onClick={() => navigate('/projects/wordle')}
-        />
+    return (
+        <div className="cards">
+            <Card
+                num="01"
+                label="Wordle Game"
+                image="/wordle-thumb.png"
+                showButton={true}
+                onClick={() => navigate('/projects/wordle')}
+            />
 
-    </div>;
+            <Card
+                num="02"
+                label="Wordle Game"
+                image="/wordle-thumb.png"
+                showButton={true}
+                onClick={() => navigate('/projects/wordle')}
+            />
+        </div>
+    );
+};
+
 export default Projects;

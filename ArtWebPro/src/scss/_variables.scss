@@ -1,0 +1,33 @@
+/* CSS Variables for light and dark themes */
+
+:root {
+    --bg: #f5f4f0;
+    --surface: #ffffff;
+    --text-primary: #0f0f0f;
+    --text-muted: #6b6b6b;
+    --accent: #1a1a1a;
+    --nav-hover-bg: #0f0f0f;
+    --nav-hover-text: #f5f4f0;
+    --border: #e0ddd6;
+    --toggle-bg: #e0ddd6;
+    --toggle-knob: #0f0f0f;
+    --shadow: 0 1px 0 var(--border);
+    --content-bg: #f0ede6;
+    --card: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg: #0f0f0f;
+    --surface: #161616;
+    --text-primary: #f0ede6;
+    --text-muted: #888;
+    --accent: #f0ede6;
+    --nav-hover-bg: #f0ede6;
+    --nav-hover-text: #0f0f0f;
+    --border: #2a2a2a;
+    --toggle-bg: #2a2a2a;
+    --toggle-knob: #f0ede6;
+    --shadow: 0 1px 0 var(--border);
+    --content-bg: #0f0f0f;
+    --card: #161616;
+}
