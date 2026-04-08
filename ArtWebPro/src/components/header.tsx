@@ -1,25 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../App.css';
 
 const Header: React.FC = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
-
+    const navigate = useNavigate();
     const toggleTheme = () => {
-        setIsDarkMode(!isDarkMode);
-        // Add logic to apply theme to body or root element
-        document.body.className = isDarkMode ? 'light-mode' : 'dark-mode';
+        setIsDarkMode(prev => !prev);
     };
+
+    // Side effect: apply theme to root element
+    useEffect(() => {
+        const theme = isDarkMode ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+    }, [isDarkMode]);
 
     return (
         <header>
             <div className="header-inner">
-                <div className="brand">Arthur<span>Web</span></div>
+                <div className="brand" onClick={() => navigate('/')}>Arthur<span>Web</span></div>
+
                 <nav>
                     <button className="nav-btn"><span>About</span></button>
                     <button className="nav-btn"><span>Projects</span></button>
+
                     <div className="divider"></div>
-                    <button className="toggle" id="themeToggle" aria-label="Toggle theme">
-                        <span className="toggle-label" id="toggleLabel">Light</span>
+
+                    <button
+                        className="toggle"
+                        onClick={toggleTheme}
+                        aria-label="Toggle theme"
+                    >
+                        <span className="toggle-label">
+                            {isDarkMode ? 'Dark' : 'Light'}
+                        </span>
+
                         <div className="toggle-track"></div>
                     </button>
                 </nav>

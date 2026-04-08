@@ -38,14 +38,6 @@
   --card: #161616;
 }
 
-.page-wrap {
-  background: var(--content-bg);
-  min-height: 100vh;
-  font-family: 'DM Sans', sans-serif;
-  transition: background .3s, color .3s;
-  color: var(--text-primary);
-}
-
 header {
   width: 100%;
   background: var(--surface);
@@ -180,6 +172,10 @@ nav {
 
 [data-theme="dark"] .toggle-track::after {
   transform: translateX(18px);
+}
+
+body {
+  background-color: var(--bg);
 }
 
 .content {
