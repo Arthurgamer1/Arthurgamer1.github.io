@@ -1,2 +1,5 @@
-const About = () => <h1>About Page</h1>;
+const About = () =>
+    <div className="content">
+        <h1>About Page</h1>
+    </div>;
 export default About;

@@ -21,9 +21,12 @@ const Header: React.FC = () => {
                 <div className="brand" onClick={() => navigate('/')}>Arthur<span>Web</span></div>
 
                 <nav>
-                    <button className="nav-btn"><span>About</span></button>
-                    <button className="nav-btn"><span>Projects</span></button>
-
+                    <button type="button" className="nav-btn" onClick={() => navigate('/about')}>
+                        <span>About</span>
+                    </button>
+                    <button type="button" className="nav-btn" onClick={() => navigate('/projects')}>
+                        <span>Projects</span>
+                    </button>
                     <div className="divider"></div>
 
                     <button

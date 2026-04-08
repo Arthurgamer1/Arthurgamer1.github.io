@@ -4,6 +4,7 @@ import './App.css'
 import About from './pages/about';
 import Home from './pages/home';
 import Projects from './pages/projects';
+import Wordle from './pages/wordle';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/wordle" element={<Wordle />} />
         </Routes>
 
       </div>

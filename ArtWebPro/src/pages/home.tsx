@@ -9,6 +9,6 @@ const Home = () =>
             <Card num="12+" label="Projects" />
             <Card num="5yr" label="Experience" />
             <Card num="3" label="Open source libs" />
-        </div>;
+        </div>
     </div>;
 export default Home;

@@ -65,6 +65,7 @@ header {
   color: var(--text-primary);
   user-select: none;
   transition: color .3s;
+  cursor: pointer;
 }
 
 .brand span {
